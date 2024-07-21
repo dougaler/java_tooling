@@ -1,7 +1,7 @@
-class RockPaperScissors {
+export class RockPaperScissors{ 
   constructor(username) {
     this.username = username;
-         this.score = {
+    this.score = {
       user: 0,
       cpu: 0 
     },
@@ -13,7 +13,7 @@ class RockPaperScissors {
    * using Math.random() method, you should be able to get one of the following values
    */
   generateCPUResponse(){
-      var acceptedValues = [ `rock`, `paper`, `scissors` ];
+    var acceptedValues = [ `rock`, `paper`, `scissors` ];
     const randomIndexNumber = Math.floor(Math.random() * 3); 
 
     return acceptedValues[randomIndexNumber];
@@ -66,5 +66,4 @@ class RockPaperScissors {
 
     this.gameHistoryLog.push(` ${this.username} selected ${userSelection}. CPU selected ${cpuSelection}: ${this.username} ${results}s`);
   }
-
 }
